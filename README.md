@@ -1,7 +1,8 @@
 # Ruby
 
 These are docker images for Ruby running on an
-[Alpine Linux container](https://registry.hub.docker.com/u/webhippie/alpine/)
+[Alpine Linux container](https://registry.hub.docker.com/u/webhippie/alpine/).
+The cuurrent container size is ```176.5 MB```
 
 
 ## Usage
