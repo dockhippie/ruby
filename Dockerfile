@@ -1,13 +1,14 @@
 FROM webhippie/alpine:latest
 MAINTAINER Thomas Boerger <thomas@webhippie.de>
 
-RUN apk-install \
+RUN apk add --update \
   build-base \
   libxml2-dev \
   libxslt-dev \
   ruby-dev \
   ruby \
-  ruby-bundler
+  ruby-bundler && \
+  rm -rf /var/cache/apk/*
 
 ADD rootfs /
 
