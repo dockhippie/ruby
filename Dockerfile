@@ -8,7 +8,8 @@ RUN apk update && \
     libxslt-dev \
     ruby-dev \
     ruby \
-    ruby-bundler && \
+    ruby-bundler \
+    ruby-io-console && \
   rm -rf /var/cache/apk/*
 
 ADD rootfs /
