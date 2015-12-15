@@ -10,7 +10,8 @@ RUN apk update && \
     ruby-dev \
     ruby \
     ruby-bundler \
-    ruby-io-console && \
+    ruby-io-console \
+    ruby-bigdecimal ^&& \
   rm -rf /var/cache/apk/*
 
 ADD rootfs /
