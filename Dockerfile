@@ -10,6 +10,7 @@ RUN apk update && \
     ruby-dev \
     ruby \
     ruby-bundler \
+    ruby-rake \
     ruby-io-console \
     ruby-bigdecimal && \
   rm -rf /var/cache/apk/*
