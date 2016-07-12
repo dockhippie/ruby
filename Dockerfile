@@ -8,6 +8,8 @@ CMD ["bash"]
 
 RUN apk update && \
   apk add \
+    tzdata \
+    git \
     build-base \
     libffi-dev \
     libxml2-dev \
