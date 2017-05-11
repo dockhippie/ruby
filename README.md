@@ -29,9 +29,7 @@ These are docker images for [Ruby](https://www.ruby-lang.org) running on an [Alp
 
 ## Inherited environment variables
 
-```bash
-ENV CRON_ENABLED false
-```
+* [webhippie/alpine](https://github.com/dockhippie/alpine#available-environment-variables)
 
 
 ## Contributing
