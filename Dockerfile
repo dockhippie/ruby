@@ -21,7 +21,8 @@ RUN apk update && \
     ruby-irb \
     ruby-rdoc \
     ruby-minitest \
-    ruby-json && \
+    ruby-json \
+    openssl-dev && \
   rm -rf /var/cache/apk/*
 
 ADD rootfs /
