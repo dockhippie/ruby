@@ -23,6 +23,8 @@ RUN apk update && \
     ruby-minitest \
     ruby-json \
     openssl-dev && \
+  bundle \
+    config build.nokogiri --use-system-libraries && \
   rm -rf /var/cache/apk/*
 
 ADD rootfs /
