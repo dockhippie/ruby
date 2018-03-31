@@ -22,6 +22,7 @@ RUN apk update && \
     ruby-rdoc \
     ruby-minitest \
     ruby-json \
+    ruby-etc \
     openssl-dev && \
   bundle \
     config build.nokogiri --use-system-libraries && \
