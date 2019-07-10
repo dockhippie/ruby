@@ -1,0 +1,19 @@
+image: webhippie/ruby:latest
+manifests:
+  -
+    image: webhippie/ruby:latest-amd64
+    platform:
+      architecture: amd64
+      os: linux
+  -
+    image: webhippie/ruby:latest-arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
+  -
+    image: webhippie/ruby:latest-arm32v6
+    platform:
+      architecture: arm
+      os: linux
+      variant: v6

@@ -1,5 +1,6 @@
 # Ruby
 
+[![Build Status](https://cloud.drone.io/api/badges/dockhippie/ruby/status.svg)](https://cloud.drone.io/dockhippie/ruby)
 [![](https://images.microbadger.com/badges/image/webhippie/ruby.svg)](https://microbadger.com/images/webhippie/ruby "Get your own image badge on microbadger.com")
 
 These are docker images for [Ruby](https://www.ruby-lang.org) running on an [Alpine Linux container](https://registry.hub.docker.com/u/webhippie/alpine/).
@@ -7,7 +8,7 @@ These are docker images for [Ruby](https://www.ruby-lang.org) running on an [Alp
 
 ## Versions
 
-* [latest](https://github.com/dockhippie/ruby/tree/master) available as ```webhippie/ruby:latest``` at [Docker Hub](https://registry.hub.docker.com/u/webhippie/ruby/)
+* [latest](./latest) available as `webhippie/ruby:latest`
 
 
 ## Volumes
@@ -50,5 +51,5 @@ MIT
 ## Copyright
 
 ```
-Copyright (c) 2015-2017 Thomas Boerger <http://www.webhippie.de>
+Copyright (c) 2015 Thomas Boerger <http://www.webhippie.de>
 ```

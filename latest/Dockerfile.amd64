@@ -1,0 +1,19 @@
+FROM webhippie/alpine:latest
+
+LABEL maintainer="Thomas Boerger <thomas@webhippie.de>" \
+  org.label-schema.name="Ruby" \
+  org.label-schema.version="latest" \
+  org.label-schema.vendor="Thomas Boerger" \
+  org.label-schema.schema-version="1.0"
+
+WORKDIR /srv/app
+ENTRYPOINT ["/usr/bin/entrypoint"]
+CMD ["bash"]
+
+RUN apk update && \
+  apk upgrade && \
+  apk add tzdata git build-base libffi-dev libxml2-dev libxslt-dev openssl-dev ruby-dev ruby ruby-bundler ruby-rake ruby-io-console ruby-bigdecimal ruby-irb ruby-rdoc ruby-minitest ruby-json ruby-etc && \
+  bundle config build.nokogiri --use-system-libraries && \
+  rm -rf /var/cache/apk/*
+
+COPY ./overlay ./overlay-amd64 /
