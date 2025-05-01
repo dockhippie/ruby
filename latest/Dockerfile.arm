@@ -6,6 +6,6 @@ COPY ./overlay /
 
 RUN apk update && \
   apk upgrade && \
-  apk add tzdata git build-base libffi-dev libxml2-dev libxslt-dev openssl-dev ruby-dev ruby ruby-bundler ruby-rake ruby-io-console ruby-bigdecimal ruby-irb ruby-rdoc ruby-minitest ruby-json ruby-etc && \
+  apk add tzdata git build-base libffi-dev libxml2-dev libxslt-dev openssl-dev ruby-dev ruby ruby-bundler ruby-rake ruby-bigdecimal ruby-rdoc ruby-minitest && \
   bundle config build.nokogiri --use-system-libraries && \
   rm -rf /var/cache/apk/*
