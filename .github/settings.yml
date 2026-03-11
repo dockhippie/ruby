@@ -1,7 +1,7 @@
 ---
 repository:
   name: ruby
-  description: Docker images for ruby
+  description: Docker images for Ruby
   topics: docker, image
 
   private: false
